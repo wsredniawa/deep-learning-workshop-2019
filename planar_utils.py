@@ -1,8 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import sklearn
-import sklearn.datasets
-import sklearn.linear_model
+
 
 def plot_decision_boundary(model, X, y):
     # Set min and max values and give it some padding
@@ -18,8 +16,9 @@ def plot_decision_boundary(model, X, y):
     plt.contourf(xx, yy, Z, cmap=plt.cm.Spectral)
     plt.ylabel('x2')
     plt.xlabel('x1')
-#    print(y.shape)
+    #    print(y.shape)
     plt.scatter(X[0, :], X[1, :], c=y[0], cmap=plt.cm.Spectral)
+
 
 def sigmoid(x):
     """
@@ -31,5 +30,5 @@ def sigmoid(x):
     Return:
     s -- sigmoid(x)
     """
-    s = 1/(1+np.exp(-x))
+    s = 1 / (1 + np.exp(-x))
     return s

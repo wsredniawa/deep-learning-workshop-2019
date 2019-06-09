@@ -5,9 +5,11 @@ Created on Sat Jun  8 12:05:29 2019
 @author: Wladek
 """
 import numpy as np
-from NN_function import layer_sizes, initialize_parameters, forward_propagation, compute_cost, backward_propagation, update_parameters
+from NN_function import initialize_parameters, forward_propagation, compute_cost, backward_propagation, \
+    update_parameters
 
-def nn_model(X, Y, n_h, num_iterations = 10000, print_cost=False):
+
+def nn_model(X, Y, n_h, num_iterations=10000, print_cost=False):
     """
     Arguments:
     X -- dataset of shape (2, number of examples)
@@ -36,5 +38,5 @@ def nn_model(X, Y, n_h, num_iterations = 10000, print_cost=False):
         parameters = update_parameters(parameters, grads)
         # Print the cost every 1000 iterations
         if print_cost and i % 1000 == 0:
-            print ("Cost after iteration %i: %f" %(i, cost))
+            print("Cost after iteration %i: %f" % (i, cost))
     return parameters
