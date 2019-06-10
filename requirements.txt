@@ -1,3 +1,8 @@
 sklearn
 matplotlib
 numpy
+imageio
+scipy
+tansorflow
+keras
+scikit-image
