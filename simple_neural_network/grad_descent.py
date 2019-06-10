@@ -7,7 +7,7 @@ Created on Sun Jun  9 16:18:45 2019
 
 import numpy as np
 import matplotlib.pyplot as plt
-
+print('cos zmienilem')
 # The data to fit
 m = 20
 theta1_true = 0.5
