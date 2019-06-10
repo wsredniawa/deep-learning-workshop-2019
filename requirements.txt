@@ -6,3 +6,4 @@ scipy
 tansorflow
 keras
 scikit-image
+opencv-python
